@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+
+}
+
+.width-160 {
+    width: 160px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+body {
+  
+    position: relative;
+
+    font-family: Helvetica, Arial, sans-serif   ;
+}
+
+/* General setiing */
+
+.floor1 {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f2f5;
+    padding: 72px 0 112px 0;
+}
+
+.box {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 960px;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 32px;
+    gap: 30px;
+}
+
+.right {
+    width: 50%;
+
+}
+
+.f_form {
+    margin: 40px;
+    padding: 15px 15px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    gap: 10px;
+    box-shadow: 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)
+}
+
+input {
+    height: 22px;
+    padding: 14px 16px;
+    font-size: 19px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+   input::placeholder {
+    color: #7476799c;
+   }
+button {
+    line-height: 48px;
+    background-color: #1877f2;
+    color: white;
+    border: 0;
+    font-size: 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.forgetid {
+    margin: 16px;
+    color: #1877f2;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.forgetid > a {
+   text-decoration: none;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.junkline {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.create_ac {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.create_ac > button {
+    font-size: 19px !important;
+    padding: 0 16px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .left, .right {
+        width: 100%;
+        align-items: center;
+    }
+    .box {
+        flex-direction: column;
+        width: 100%;
+    }
+}
